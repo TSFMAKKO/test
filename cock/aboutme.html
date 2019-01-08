@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+   <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width; initial-scale=1.0">
+   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+<style>
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+body{
+	font-family:'cwTexHei',sans-serif;
+	}
+
+
+.banner{
+	background-image:url(images/pic_about.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#FFF;
+	
+	}
+
+div{
+    text-align:left;
+}
+
+div img{
+    
+
+
+}
+
+.container{
+    margin: 0 auto;
+
+}
+
+div ul{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+.video-container {
+
+position: relative;
+
+padding-bottom: 56.25%;
+
+padding-top: 30px;
+
+height: 0;
+
+overflow: hidden;
+
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+
+padding: 20px;
+
+position: absolute;
+
+top: 0;left: 0;
+
+width: 100%;
+
+height: 100%;}
+
+
+
+.responsive-16by9 {
+    display: block;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    padding-bottom: 56.25%;
+}
+.responsive-16by9 iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+ul li{
+    text-align: left
+}
+</style>
+ 
+  <title>甕缸雞</title>
+</head>
+
+<bady>
+
+<!-- 導覽列 先用<p class"">才有提示 -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+
+                <a href="#" class="navbar-brand"> 飛天甕缸雞休閒餐廳 </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mymenu" aria-controls="#mymenu" aria-expand="false" aria-label="toggle navigation">
+               <span class="navbar-toggler-icon">
+               
+               <!--只是綁定mymenu而已，可不加入aria-controls="#mymenu" aria-expand="false" aria-label="toggle navigation"-->
+               
+               </span>
+               
+               </button>
+               <div class="collapse navbar-collapse" id="mymenu">
+               <ul class="navbar-nav mr-auto">
+                   <li class="nav-item"><a href="index.html" class="nav-link">
+                   <i class="material-icons" style="vertical-align:bottom">home</i>
+                   HOME
+                   </a>
+                   </li>
+                   <li class="nav-item active"><a href="aboutme.html" class="nav-link"><i class="material-icons" style="vertical-align:bottom">face</i>關於我們</a></li>
+               
+                 <li class="nav-item"><a href="product.html" class="nav-link"><i class="material-icons"  style="vertical-align:bottom">phone_iphone</i>菜單資訊</a></li>
+                   
+                    <li class="nav-item"><a href="callme.html" class="nav-link"><i class="material-icons"  style="vertical-align:bottom">phone_iphone</i>與我聯絡</a></li>
+               </ul>
+               
+               </div>
+               </nav>
+               
+
+
+<br/><br/>
+
+<!-- 這樣的寫法意思是上下內距都是 80px 而左右內距都是 20px，呈現結果如下 加入 top只空格上面 http://www.wibibi.com/info.php?tid=111  -->
+
+<h1 class="display-5">&nbsp;</h1>
+<div class="container">
+<!--<p>咖啡的來源已無從稽考。諸多傳說之一指咖啡原產於衣索比亞（Ethiopia）西南部的咖法省高原地區，據說是一位牧羊人發現羊吃了一種植物後，變得非常興奮活潑，因此發現了咖啡。</p>
+<p>也有說法是由於一場野火，燒毀了一片咖啡林，燒烤咖啡的香味引起周圍居民的注意。人民最初咀嚼這種植物果實以提神，後來烘烤磨碎摻入麵粉做成麵包，作為勇士的食物，以提高作戰的勇氣。</p>
+
+<p>直到公元1000年左右，人們才開始用水煮咖啡做為飲料。</p>   -->
+<!--<button class="btn btn-success float-right" id="fadeBtn">Show Coffee</button> -->	
+</div>
+
+
+<div class="container">
+    <div>
+      <h2 class="display-3">關於我們</h2>
+      </div>
+  </div>
+
+  <br/><br/>
+
+<div class="container">
+    <!--
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">選單超連結(HOME  關於我們  菜單介紹  聯絡資訊)</div>
+    </div>
+    <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <img src="images/pic_menu.jpg" style="width: 100%;">
+
+            </div>
+    </div>        
+    <br>
+-->
+	   <div class="row">
+       	 <div class="col-xs-12 col-md-6 col-lg-6">
+         <h3>老闆黃世梗</h3><br>
+         
+         	<p>黃世梗畢業逢甲大學，人稱五叔，熟練英文、書法、電腦年輕時做過記者也做生意，六十歲的黃世梗，四年前在親戚開的餐廳裡，學習烤雞、做外場，以客戶至上、親切聞名，走過人生大半輩子，在年過半百才開餐廳，他坦言壓力真的很大 ，他想人生再失敗一次，就沒有機會了。</p>
+            <p>憑著信心和毅力以破斧沉舟的心做出好吃的甕缸雞。</p>
+            <p>遠從香港來捧場的劉姓饕客表示老闆心地善良，再加上特別的烤雞滋味，現榨檸檬汁組合，令他相當難忘，每個月來台洽公時，一定要去吃一隻烤雞才不虛台灣行。</p>
+         
+         </div>
+         
+         
+         <div class="col-xs-12 col-md-6 col-lg-6">
+         <br><br>
+          <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/k8De9P6DWVg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          
+          </div>
+         	<p style="text-align:center">非凡大探索 高雄柴燒脆皮甕缸雞</p>
+         </div>
+       
+       </div>
+
+
+    <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-6"><H3>特色介紹</H3><br>
+                <p>以甕缸烤雞為主題，採真正古早雞，用原木烘烤，色香味俱全，另有鄉土料理單點，山產、海產佳餚與湯鍋料理，另有本店獨特的雞油飯、雞油麵線可口又美味。</p>
+
+ 
+
+<p>辦桌合菜，有4500元、5300元、6000元三種，另可客製8000元以上純正鮑魚大餐合菜，用餐環境寬敞清幽，平價消費老少咸宜。</p>
+            
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6">
+                 <br><br>
+              <div class="video-container">
+                   
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/H1-99d6YUKM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                <p style="text-align:center">台灣網路電視台專訪飛天甕缸雞預告</p>
+            </div>
+            
+        </div>
+      
+    <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-6">
+              
+              
+                <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/CX5l0fvNRBg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+              <p style="text-align:center">高雄不思議節目介紹</p>
+              
+            </div>
+            
+            <div class="col-xs-12 col-md-6 col-lg-6">
+                
+                
+                        
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XbDCCIUvtHg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                 </div>
+                
+                <p style="text-align:center">三立都會台 愛玩客【玩客瘋高雄】</p>
+            </div>
+             
+        </div>
+        
+        <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-4" style="padding:20px">
+                       <img src="images/SAM_0474.JPG">
+                </div>
+                <br><br>
+                <div class="col-xs-12 col-md-6 col-lg-4" style="padding:20px">
+                      <img src="images/SAM_0285.JPG">
+                </div>
+                <br><br>
+                <div class="col-xs-12 col-md-6 col-lg-4" style="padding:20px">
+                    <img src="images/72596.jpg">
+                       
+                </div>
+                
+            </div>
+            
+              <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-6" style="padding:20px">
+                      <h4>適合對象</h4>
+
+<p>婚宴喜慶辦桌、公司宴客、家庭聚餐、商務聚餐、尾牙春酒聚餐</p>
+
+ 
+<br>
+<h4>停車場</h4>
+
+<p>超過百位 (與澄觀園高爾夫球練習場共用)</p>
+
+ <br>
+
+<h4>仁武店</h4>
+
+<p>高雄市仁武區鳳仁路100-1號 (檢視較大的地圖)
+
+11:30—22:00 午間無休 全年無休 接受刷卡    傳真:07-3726351
+
+**農曆除夕至初四期間內用，須加收10%服務費**</p>
+                </div>
+                <br><br>
+                <div class="col-xs-12 col-md-6 col-lg-6" style="padding:20px">
+                      <div class="responsive-16by9">
+                     <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="float:right" src="https://maps.google.com.tw/maps?f=q&amp;source=s_q&amp;hl=zh-TW&amp;geocode=&amp;q=%E9%A3%9B%E5%A4%A9%E7%94%95%E7%BC%B8%E9%9B%9E&amp;aq=&amp;sll=22.687934,120.353508&amp;sspn=0.007582,0.009645&amp;brcurrent=3,0x346e1a95569ae32b:0x3bdc44eff4d46239,0,0x346e43517a7a741b:0x4826a24a54732a37&amp;ie=UTF8&amp;hq=%E9%A3%9B%E5%A4%A9%E7%94%95%E7%BC%B8%E9%9B%9E&amp;hnear=&amp;ll=22.687934,120.353508&amp;spn=0.007582,0.009645&amp;t=m&amp;output=embed"></iframe>
+                 </div>
+                </div>
+    
+            </div>
+            
+            
+            <div class="row">
+                <div class="col-xs-12 col-md-3 col-lg-3" style="padding:20px">
+                <h4>路線說明</h4>
+                       <img src="images/SAM_0226.jpg">
+                </div>
+                <br><br>
+                <div class="col-xs-12 col-md-9 col-lg-9" style="margin-top:20px">
+                <br>
+                      <p>由中山高速公路轉高雄鼎金交流道(十號高速公路)，往旗山方向行進，在6K仁武交流道下來，迴轉，順十號高速公路橋下，前進1.5公里即可遇到六線道的鳳仁路，右轉50公尺右邊即是飛天甕缸雞。
+
+周邊明顯地標:座落在全國最大的"澄觀園高爾夫球"練習場邊，正對面有知名的”仁武烤鴨”與麥當勞。</p>
+                </div>
+           
+                
+            </div>
+            
+            
+            
+        
+            <footer class="container text-center" style="padding: 30px">
+                    &copy 高雄市仁武區鳳仁路100-1號 營業時間:11:30—22:00 午間無休 全年無休 接受刷卡 © 2018-2020 飛天雞有限公司版權所有
+                    </footer>
+</div>
+
+
+        
+
+</bady>
+
+</html>
