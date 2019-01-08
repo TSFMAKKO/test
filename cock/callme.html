@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+   <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width; initial-scale=1.0">
+   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+<style>
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+body{
+	font-family:'cwTexHei',sans-serif;
+	}
+
+
+.banner{
+	background-image:url(images/pic_contact.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#FFF;
+	
+	}
+
+div{
+    text-align: center;
+}
+
+div img{
+    
+
+
+}
+
+ul li{
+    text-align: left
+}
+
+
+.container{
+    margin: 0 auto;
+
+}
+
+div ul{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+</style>
+ 
+  <title>甕缸雞</title>
+</head>
+
+<bady>
+    
+        <div id="header">
+                <!--容器分為左圖右導覽連結 -->
+                <div class="container">
+      
+<!-- 導覽列 先用<p class"">才有提示 -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+
+                <a href="#" class="navbar-brand"> 飛天甕缸雞休閒餐廳 </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mymenu" aria-controls="#mymenu" aria-expand="false" aria-label="toggle navigation">
+               <span class="navbar-toggler-icon">
+               
+               <!--只是綁定mymenu而已，可不加入aria-controls="#mymenu" aria-expand="false" aria-label="toggle navigation"-->
+               
+               </span>
+               
+               </button>
+               <div class="collapse navbar-collapse" id="mymenu">
+               <ul class="navbar-nav mr-auto">
+                   <li class="nav-item"><a href="index.html" class="nav-link">
+                   <i class="material-icons" style="vertical-align:bottom">home</i>
+                   HOME
+                   </a>
+                   </li>
+                   <li class="nav-item"><a href="aboutme.html" class="nav-link"><i class="material-icons" style="vertical-align:bottom">face</i>關於我們</a></li>
+               
+                 <li class="nav-item"><a href="product.html" class="nav-link"><i class="material-icons"  style="vertical-align:bottom">phone_iphone</i>菜單資訊</a></li>
+                   
+                    <li class="nav-item active"><a href="callme.html" class="nav-link"><i class="material-icons"  style="vertical-align:bottom">phone_iphone</i>與我聯絡</a></li>
+               </ul>
+               
+               </div>
+               </nav>
+
+</div>
+</div>
+
+<!-- 這樣的寫法意思是上下內距都是 80px 而左右內距都是 20px，呈現結果如下 加入 top只空格上面 http://www.wibibi.com/info.php?tid=111  -->
+
+<h1 class="display-5"><br></h1>
+<div class="container">
+<!--<p>咖啡的來源已無從稽考。諸多傳說之一指咖啡原產於衣索比亞（Ethiopia）西南部的咖法省高原地區，據說是一位牧羊人發現羊吃了一種植物後，變得非常興奮活潑，因此發現了咖啡。</p>
+<p>也有說法是由於一場野火，燒毀了一片咖啡林，燒烤咖啡的香味引起周圍居民的注意。人民最初咀嚼這種植物果實以提神，後來烘烤磨碎摻入麵粉做成麵包，作為勇士的食物，以提高作戰的勇氣。</p>
+
+<p>直到公元1000年左右，人們才開始用水煮咖啡做為飲料。</p>   -->
+<!--<button class="btn btn-success float-right" id="fadeBtn">Show Coffee</button> -->	
+</div>
+
+
+
+<div class="container" style="margin: 0px 0px">
+    <!--
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">選單超連結(HOME  關於我們  菜單介紹  聯絡資訊)</div>
+    </div>
+    <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <img src="images/pic_menu.jpg" style="width: 100%;">
+
+            </div>
+    </div>        
+    <br>
+-->
+<br><br>
+            
+    <div class="row">
+            <div class="col-xs-12 col-md-4 col-lg-4">
+          	 
+              <H3 style="text-align:center">與我聯絡</H3>
+            	
+               
+               
+            </div>
+
+      <div class="col-xs-12 col-md-8 col-lg-8">
+            <br>
+            <br>
+           <p>
+            <input type="button" class="btn btn-block" value="Email" onClick="self.location.href='mailto:flytain123@gmail.com';" style="text-align:center">
+            </p>
+            
+
+
+
+            <form method="post" action="ok.php" id="f1" name="f1">
+                <div class="form-group">
+                    <label for="name">姓名<b style="color:#F00">*</b></label>
+                    <input type="text" class="form-control" id="name" name="name" aria-describedby="name"  required class="inputbg" placeholder="請輸入姓名...">
+                  </div>
+  
+
+                  <div class="form-group">
+                        <label for="phone_iphone">聯絡電話</label>
+                        <input type="number" class="form-control" id="tel" name="tel" aria-describedby="number" placeholder="07-xxxx..."">
+                      </div>
+
+                <div class="form-group">
+                    <label for="phone_iphone">行動電話</label>
+                    <input type="number" class="form-control" id="mobile" name="mobile" aria-describedby="number" placeholder="09xx..."">
+                  </div>
+
+                <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="abc@gmail.com">
+                                </div>
+
+  
+                <div class="form-group">
+                    <label for="message">留言給我們</label>
+                    <textarea class="form-control" name="memo" id="memo"></textarea>
+                </div>
+
+                  <button type="submit" class="btn">確定</button>
+                  <button type="reset" class="btn">取消</button>
+            </form>
+
+
+            </div>
+            
+            <div class="col-xs-12 col-md-3 col-lg-1">
+            <p>&nbsp;</p>
+            </div>
+            
+        </div>
+        
+    </div>
+        <footer class="container text-center" style="padding: 30px">
+                &copy 高雄市仁武區鳳仁路100-1號 營業時間:11:30—22:00 午間無休 全年無休 接受刷卡 © 2018-2020 飛天雞有限公司版權所有
+                </footer>
+
+
+</bady>
+
+</html>
