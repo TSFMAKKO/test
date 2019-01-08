@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <h1>AJAX 網路連線基本操作</h1>
+    <div id="list"></div>
+
+    <div id="list2" class="list3"></div>
+
+    <div id="taipai"></div>
+    <div id="taipai2"></div>
+
+    <div id="taipai5"></div>
+
+
+    <script>
+        // 先顯示 loading 的訊息
+        let list = document.getElementById('list');
+        list.innerHTML = "......loading......";
+
+        let list2 = document.getElementById('list2');
+        list.innerHTML = "......loading......";
+
+        let taipai = document.getElementById('taipai');
+        list.innerHTML = "......loading......";
+
+        let taipai2 = document.getElementById('taipai2');
+        list.innerHTML = "......loading......";
+        // 透過 AJAX fetch API連線到遠端的網址，抓取資料
+        /*
+            fetch(網址).then(function(response){
+                // Response 物件，代表伺服器的回應
+            });
+
+        */
+
+
+        // let src3="https://tsfmakko.github.io/test/README.md";
+        // fetch(src3).then(function(response){
+        //    console.log(response); 
+        // });
+
+        let src = "https://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=f6bb8bb9-c5b6-4851-a837-695d202d4ccb";
+        fetch(src).then(function (response) {
+            // console.log(response); 
+            return response.json();  // 用json方式取得資料
+        }).then(function (result) {
+            console.log("台北公開資料", result);
+            console.log("台北公開資料子向", result.result.results[0]);
+            result1 = result.result.results[0].S101NAME;  //  div無法直接塞物件...要最子項    S101NAME抓到0~3
+            console.log(result1);
+            taipai.innerHTML += result1 + "<hr/>";
+
+
+
+            result2 = result.result.results[0];  // div無法直接塞物件...要最子項
+            console.log(result2);
+            var str = JSON.stringify(result2);
+            
+            console.log(str);
+
+
+            let taipai_2;
+             taipai2.innerHTML += str+"<hr/>";
+
+
+            for (let i = 0; i < result2.length; i++) {
+                console.log(i); // 抓到json 索引0
+
+               
+                
+                
+            }
+
+
+        });
+
+        // let src2="https://tsfmakko.github.io/test/README.md";
+        // fetch(src2).then(function(response){
+        //    console.log("最終資料", response); 
+        //     return response.text();  // 用字串方式取得資料
+        // });
+
+        let src3 = "https://tsfmakko.github.io/test/data/products.json";
+        fetch(src3).then(function (response) {
+            //    console.log("最終資料", response); 
+            return response.json();  // 用字串方式取得資料
+
+        }).then(function (result) {
+            console.log("最終的資料", result);
+            // console.log("name", result[0])
+            list.innerHTML = "";
+
+            let product;
+            for (let i = 0; i < result.length; i++) {
+                console.log(i);
+                product = result[i];
+                // console.log(product);
+                list.innerHTML += product.name.bold() + " - " + product.price + "<br/>" + product.description + "<hr/>";
+            }
+
+        });
+
+
+        let src4 = "https://tsfmakko.github.io/test/data/taipai.json";
+        fetch(src4).then(function (response) {
+               console.log("最終資料", response); 
+            return response.json();  // 用字串方式取得資料
+
+        }).then(function (result) {
+            console.log("最終的資料", result);
+            // console.log("name", result[0])
+            taipai5.innerHTML = "";
+
+            let product;
+            for (let i = 0; i < result.length; i++) {
+                console.log(i);
+                product = result[i];
+                // console.log(product);
+                taipai5.innerHTML += product.SBMNAME.bold() + "<br/>" + product.S101NAME + "<br/>" + product.SBMXADDR + "<hr/>";
+            }
+
+        });
+
+
+
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                method: "GET",
+                url: "https://tsfmakko.github.io/test/data/products.json",
+                // data: { name: "John", location: "Boston" }
+            })
+                .done(function (msg) {
+                    // alert( "Data Saved: " + msg );
+                    console.log('jQuery全部', msg);
+                    console.log('第一支手機的型號:', msg[0].name)
+                    product2 = msg[0].name;
+                    // console.log(product2);
+                    // list2.innerHTML += "第一支手機: " + product2 + "<hr/>";
+                    $(list2).html("第一支手機: " + product2 + "<hr/>");
+                });
+        });
+
+    </script>
+</body>
+
+</html>
