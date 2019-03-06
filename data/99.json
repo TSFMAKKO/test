@@ -1,23 +1,17 @@
 [
   {
-    "one":"1*1等於1",
-   "two":"1*2=2",
-   "three":"1*3=3",
-   
-   
- 
-  
+    "name":"1*1=1",
+    "price":27700,
+    "description":"最新的 Google 手機。"
   },
   {
-  "one":"2*1等於2",
-   "two":"2*2=4",
-   "three":"2*3=6",
-   
+    "name":"2*1=2",
+    "price":1500,
+    "description":"在大螢幕上播放喜歡的影片。"
   },
   {
-  "one":"3*1等於2",
-   "two":"3*2=4",
-   "three":"3*3=6",
-   
-  },
+    "name":"3*1=3",
+    "price":12000,
+    "description":"最新的 Chromebook 產品。"
+  }
 ]
